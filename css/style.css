@@ -1,0 +1,148 @@
+body {
+  background: #fff;
+  color: #101778;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ h1, h2 {
+  color: #101778;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #101778;
+  font-weight: 500;
+  text-align: center;
+  
+  
+}
+.evento-item-botoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+button {
+  background: #101778;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 18px;
+  font-size: 0.90rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0;
+  min-width: 70px;
+  max-width: 90px;
+}
+button:hover {
+  background: #181c3a;
+}
+
+
+button {
+  background: #101778;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 18px;
+  font-size: 0.90rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0;
+  min-width: 70px;
+  max-width: 90px;
+}
+
+#listagem-container, #cadastroEventos-container, #formulario-edicao {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.evento-item {
+  background: #fff;
+  color: #101778;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px #10177822;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.evento-item img {
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #e5e5e5;
+  box-shadow: 0 2px 12px #10177833;
+  margin: 0;
+}
+
+.evento-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.evento-item-content .evento-nome {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #101778;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+#listar-eventos p {
+  color: #101778;
+  text-align: center;
+  
+  
+}
+input, textarea {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+#listar-eventos {
+  background-color: #afafaf;
+}
+.evento-item {
+  background-color: #afafaf;
+}
+#formulario-edicao input{
+  margin-left: 140px;
+  margin-right: 140px;
+  width: 67%;
+}
+#btnEnviar {
+  margin-left: 140px;
+  margin-right: 140px;
+  width: 79.4%;
+  min-width: unset;
+  max-width: unset;
+  padding: 10px 0;
+  font-size: 1rem;
+  display: block;
+}

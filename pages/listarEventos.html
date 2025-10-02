@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <div id="header-content"></div> 
+    <div id="listagem-container"> 
+        <h1 id="tituloLista"> Lista de Eventos </h1>
+        <div id="listar-eventos"> 
+            <p> Carregando Eventos... </p>
+        </div>
+    </div>
+
+    <div id="formulario-edicao" style="display: none;"> 
+        <h2> Editar Evento</h2>
+    <label for="editar-nome"> Nome: </label>
+    <input type="text" id="editar-nome"> 
+    <br> <br>
+    <label for="editar-dataInicio"> Data de Início: </label>
+    <input type="date" id="editar-dataInicio"> 
+    <br> <br>
+    <label for="editar-dataFim"> Data de Fim: </label>
+    <input type="date" id="editar-dataFim"> 
+    <br> <br>
+    <label for="descricao"> Descrição: </label>
+    <input type="text" id="descricao"> 
+    <br> <br>
+    <label for="imagemCapa"> Imagem de capa (URL): </label>
+    <input type="text" id="imagemCapa" placeholder="Cole o link da imagem"> 
+    <br> <br>
+    <input type="hidden" id="editar-id">
+
+    <button id="btnSalvarEdicao"> Salvar Alterações </button>
+    <button id="btnCancelarEdicao"> Cancelar </button>
+
+
+    <script type="module" src="./../js/listarEventos.js"></script>
+     <script>
+        async function loadHeader() {
+            const response = await fetch('./../contents/header.html');
+            const headerHTML = await response.text();
+            document.getElementById('header-content').innerHTML = headerHTML;
+        }
+        loadHeader();
+    </script>
+</body>
+</html>
